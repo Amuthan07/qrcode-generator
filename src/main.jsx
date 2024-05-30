@@ -7,6 +7,6 @@ import './QrCode.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    {/* <userCard /> */}
+    
   </React.StrictMode>,
 )

@@ -6,11 +6,8 @@
 }
 
 body {
-  background-color: #F9E79F;
-  display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+    background-color: #F9E79F;
+    display: flex;
 	min-height: 100vh;
 	margin: 0;
 }
@@ -25,9 +22,11 @@ body {
 }
 
 .app-container h1 {
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 3em;
     padding: 5px;
+    letter-spacing: 1px;
+
     /* border: 2px solid #A9DFBF */
 }
 
@@ -35,24 +34,30 @@ body {
     padding: 5px;
     box-shadow: 0px 0px 10px  rgba(0,0,0,0.1);
     background-color: azure;
+    margin-bottom: 10px;
 }
 
 .input-label {
     display: block;
-    margin-bottom: 8 px;
+    margin-bottom: 20 px;
     color: darkslategray;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 3px;
 
 }
 
 input[type="text"] {
     padding: 12px;
     margin-bottom: 20px;
-    width: 100%;
+    width: 300px;
     font-size: 16px;
     border: 2px solid darkslategray;
     border-radius: 5px;
+}
+
+::placeholder {
+    text-align: center;
 }
 
 button{
@@ -62,10 +67,13 @@ button{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    
 }
 
 .generate-button{
     background-color: #F4D03F;
+    margin-right: 10px;
+    align-items: center;
 }
 
 .generate-button:hover {
@@ -79,6 +87,13 @@ button{
 
 .download-button {
     background-color: #A9DFBF;
+    margin-right: 0;
+    align-items: center;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    
 }
 
 .download-button:hover {
